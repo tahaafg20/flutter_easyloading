@@ -79,6 +79,7 @@ enum EasyLoadingIndicatorType {
   doubleBounce,
   fadingFour,
   fadingCube,
+  riaLoader,
   pulse,
   cubeGrid,
   rotatingCircle,
