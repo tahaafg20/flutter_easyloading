@@ -68,6 +68,9 @@ class _LoadingIndicatorState extends State<LoadingIndicator> {
           size: _size,
         );
         break;
+      case EasyLoadingIndicatorType.riaLoader:
+        _indicator = Image.asset("assets/ria_loader.gif", height:50, width:50);
+        break;
       case EasyLoadingIndicatorType.threeBounce:
         _indicator = SpinKitThreeBounce(
           color: _indicatorColor,
