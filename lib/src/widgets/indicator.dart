@@ -210,11 +210,6 @@ class _LoadingIndicatorState extends State<LoadingIndicator> {
         break;
     }
 
-    return Container(
-      constraints: BoxConstraints(
-        maxWidth: _width,
-      ),
-      child: _indicator,
-    );
+    return _indicator;
   }
 }
