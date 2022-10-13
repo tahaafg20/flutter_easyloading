@@ -139,32 +139,32 @@ class EasyLoadingContainerState extends State<EasyLoadingContainer>
     return Stack(
       alignment: _alignment,
       children: <Widget>[
-//         AnimatedBuilder(
-//           animation: _animationController,
-//           builder: (BuildContext context, Widget? child) {
-//             return Opacity(
-//               opacity: _animationController.value,
-//               child: IgnorePointer(
-//                 ignoring: _ignoring,
-//                 child: _dismissOnTap
-//                     ? GestureDetector(
-//                         onTap: _onTap,
-//                         behavior: HitTestBehavior.translucent,
-//                         child: Container(
-//                           width: double.infinity,
-//                           height: double.infinity,
-//                           color: _maskColor,
-//                         ),
-//                       )
-//                     : Container(
-//                         width: double.infinity,
-//                         height: double.infinity,
-//                         color: _maskColor,
-//                       ),
-//               ),
-//             );
-//           },
-//         ),
+        AnimatedBuilder(
+          animation: _animationController,
+          builder: (BuildContext context, Widget? child) {
+            return Opacity(
+              opacity: _animationController.value,
+              child: IgnorePointer(
+                ignoring: _ignoring,
+                child: _dismissOnTap
+                    ? GestureDetector(
+                        onTap: _onTap,
+                        behavior: HitTestBehavior.translucent,
+                        child: Container(
+                          width: double.infinity,
+                          height: double.infinity,
+                          color: _maskColor,
+                        ),
+                      )
+                    : Container(
+                        width: double.infinity,
+                        height: double.infinity,
+                        color: _maskColor,
+                      ),
+              ),
+            );
+          },
+        ),
         AnimatedBuilder(
           animation: _animationController,
           builder: (BuildContext context, Widget? child) {
